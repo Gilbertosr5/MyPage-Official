@@ -1,3 +1,5 @@
+import projects from "./projects";
+
 // Declarations
 const mobileBars = document.getElementById("mobileBars");
 
