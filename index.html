@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Gilberto Ribeiro</title>
+  </head>
+  <body>
+    <a name="top"></a>
+
+    <div class="main-container">
+      <div class="home-square hs1">
+        <p>Hello! I am</p>
+        <h1 onmouse>Gilberto</h1>
+      </div>
+      <div class="home-square hs2">
+        <ul>
+          <li>Web Developer</li>
+          <li>UI/UX DESIGN</li>
+          <li>Data Scientist</li>
+        </ul>
+      </div>
+      <div class="ball3 ball"></div>
+      <div class="ball2 ball"></div>
+      <div class="ball1 ball"></div>
+      <div class="mini-ball3 mini-ball"></div>
+      <div class="mini-ball2 mini-ball"></div>
+      <div class="mini-ball1 mini-ball"></div>
+      <div
+        class="my-img"
+        onclick='window.open("https://github.com/Gilbertosr5", "_blank")'
+      ></div>
+    </div>
+
+    <div class="projects-container">
+      <div class="pro-head">
+        <h1>My Portifolio</h1>
+      </div>
+      <div class="pro-principal">
+        <div class="pro-nav">
+          <button class="nav-btn">UI/UX</button>
+          <button class="nav-btn">Web App</button>
+          <button class="nav-btn">React JS</button>
+          <button class="nav-btn selected">All</button>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-img">
+              <p class="card-name">Name</p>
+            </div>
+            <div class="card-text">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                dolore, sapiente eius aliquid aperiam
+              </p>
+              <a href="#git-link">See on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar - this need to be here, 'Cause of the fixed propriety -->
+    <div class="navbar">
+      <div class="logo"><a href="#top">MyPage</a></div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#top" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="bars" id="mobileBars">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
