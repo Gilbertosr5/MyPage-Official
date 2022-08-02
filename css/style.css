@@ -142,12 +142,13 @@ body {
 }
 
 .my-img {
-  background-image: url(../img/gilberto.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #532fb3;
-  border: 1px solid 00006b;
+  background: rgb(83, 47, 179);
+  background: rgb(101, 60, 209);
+  background: radial-gradient(
+    circle,
+    rgba(101, 60, 209, 1) 0%,
+    rgba(0, 0, 107, 1) 60%
+  );
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -155,13 +156,17 @@ body {
   right: 16%;
   top: 50%;
   transform: translateY(-50%);
-  transition: 0.5s;
+  transition: box-shadow 0.5s;
   cursor: pointer;
 }
 
+.my-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
 .my-img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  background-color: #48299c;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 .ball1,
