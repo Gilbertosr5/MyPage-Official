@@ -101,10 +101,11 @@ body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .navbar {
     border-bottom: 1px solid #00006b;
     transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.7);
   }
   .nav-list {
     display: none;
@@ -114,6 +115,7 @@ body {
     text-align: center;
     z-index: 1000;
     height: calc(100vh - 46px);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   .nav-list.active {
@@ -130,6 +132,11 @@ body {
 
   .bars {
     display: block;
+  }
+
+  .ball,
+  .mini-ball {
+    display: none;
   }
 }
 
@@ -167,6 +174,11 @@ body {
 
 .my-img:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+.ball,
+.mini-ball {
+  transition: display 0.5s;
 }
 
 .ball1,
@@ -294,7 +306,6 @@ body {
   text-align: center;
   font-size: 25px;
   padding: 10px;
-  color: #00006b;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
 }
@@ -419,19 +430,79 @@ body {
   color: #00006b;
 }
 
+/* ============= About Area ============= */
+.about-container {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  padding: 10px;
+}
+
+.about-cards {
+  padding: 10px;
+  flex: 1;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.emphasis {
+  color: #00006b;
+}
+
+.ab-card {
+  width: 220px;
+  height: 400px;
+  margin: 0 7.5px 0 7.5px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 210px 1fr;
+  grid-gap: 5px;
+}
+
+.ab-card-img {
+  background-image: url(../img/project-example.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.ab-card-text {
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ab-card-text p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
 /* ============= Medias Area ============= */
 @media (max-width: 768px) {
 }
 
 @media (max-width: 425px) {
-  .navbar {
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-
-  .nav-list {
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-
   .ball1,
   .ball2,
   .ball3,
