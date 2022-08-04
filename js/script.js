@@ -3,21 +3,21 @@ const projects = [
     name: "Music Player",
     url: "https://github.com/Gilbertosr5/MusicPlayer",
     img: "img/projects/MusicPlayer.PNG",
-    text: "A simple Music Player system. With this you can listen your favorites songs and more! principal Language: Javascript",
+    text: "Sistema de Player de Música simples, onde a chave ta no mecanismo de passar a música e pausar. Principal: Javascript",
     category: "web",
   },
   {
     name: "UNIP Clone",
     url: "https://github.com/Gilbertosr5/UnipAluno-Clone",
     img: "img/projects/clone_unip.PNG",
-    text: "A clone of UNIP Student Page, and this project have a simple login validation with Local Storage. Principal Language: CSS",
+    text: "Clone da Pagina do aluno da UNIP. Possui uma validação Simples com Local storage e uma pagina Home. Principal: CSS",
     category: "web",
   },
   {
     name: "Facebook Clone",
     url: "https://github.com/Gilbertosr5/FaceLoginClone",
     img: "img/projects/faceClone.PNG",
-    text: "A Very simple Facebook Clone. It's just a single page & I used Bootstrap v5.1 to do it.",
+    text: "Clone muito simples da Página de Login do Facebook. Feito apenas para ver algumas coisas de Bootstrap.",
     category: "web",
   },
 ];
@@ -51,7 +51,7 @@ function addProject(btn) {
         <p>
           ${projects[i].text}
         </p>
-        <a href="${projects[i].url}">See on GitHub</a>
+        <a href="${projects[i].url}" target="_blank">See on GitHub</a>
       </div>
       </div>`;
       console.log(`${projects[i].name} added`);
@@ -71,7 +71,7 @@ function addProject(btn) {
             <p>
               ${projects[i].text}
             </p>
-            <a href="${projects[i].url}">See on GitHub</a>
+            <a href="${projects[i].url}" target="_blank">See on GitHub</a>
           </div>
         </div>`;
         console.log(`${projects[i].name} added`);
@@ -92,7 +92,7 @@ function addProject(btn) {
             <p>
               ${projects[i].text}
             </p>
-            <a href="${projects[i].url}">See on GitHub</a>
+            <a href="${projects[i].url}" target="_blank">See on GitHub</a>
           </div>
         </div>`;
         console.log(`${projects[i].name} added`);
