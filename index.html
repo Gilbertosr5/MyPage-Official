@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Gilberto Ribeiro</title>
   </head>
-  <body>
+  <body onload="addProject('all')">
     <a name="top"></a>
 
     <div class="main-container">
@@ -54,10 +54,14 @@
       </div>
       <div class="pro-principal">
         <div class="pro-nav">
-          <button class="nav-btn">UI/UX</button>
-          <button class="nav-btn">Web App</button>
-          <button class="nav-btn">React JS</button>
-          <button class="nav-btn selected">All</button>
+          <button class="nav-btn" onclick="addProject('ux');">UI/UX</button>
+          <button class="nav-btn" onclick="addProject('web');">Web App</button>
+          <button class="nav-btn" onclick="addProject('react');">
+            React JS
+          </button>
+          <button class="nav-btn selected" onclick="addProject('all')">
+            All
+          </button>
         </div>
         <div class="cards">
           <!-- <div class="card"> This is a Model to script
