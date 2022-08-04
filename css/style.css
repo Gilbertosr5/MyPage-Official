@@ -336,11 +336,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: pointer;
   transition: 0.5s;
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
+  user-select: none;
 }
 
 .card:hover {
@@ -398,6 +398,7 @@ body {
   margin-top: 5px;
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 }
 
 .card-text a:hover {
@@ -449,7 +450,8 @@ body {
   grid-gap: 5px;
 }
 
-.ab-card-img {
+.ab-card-img,
+.ab-card-img img {
   background-image: url(../img/project-example.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -458,6 +460,7 @@ body {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .ab-card-text {
@@ -661,9 +664,13 @@ body {
   .form textarea {
     width: 100%;
   }
+
+  .form-head {
+    font-size: 20px;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 446px) {
   .pro-head {
     font-size: 20px;
   }
@@ -676,5 +683,9 @@ body {
     font-size: 14px;
     margin: 0;
     padding: 10px;
+  }
+
+  .form-head {
+    font-size: 18px;
   }
 }

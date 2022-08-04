@@ -23,14 +23,14 @@
 
     <div class="main-container">
       <div class="home-square hs1">
-        <p>Hello! I am</p>
+        <p>Olá! Me chamo</p>
         <h1 onmouse>Gilberto</h1>
       </div>
       <div class="home-square hs2">
         <ul>
-          <li>Web Developer</li>
-          <li>UI/UX DESIGN</li>
-          <li>Data Scientist</li>
+          <li>Desenvolvedor Web</li>
+          <li>DESIGN UI/UX</li>
+          <li>Cientista de Dados</li>
         </ul>
       </div>
       <div class="ball3 ball"></div>
@@ -50,7 +50,7 @@
     <div class="projects-container">
       <a name="projects"></a>
       <div class="pro-head">
-        <h1><span class="emphasis">My</span> Portifolio</h1>
+        <h1><span class="emphasis">Meu</span> Portifolio</h1>
       </div>
       <div class="pro-principal">
         <div class="pro-nav">
@@ -64,7 +64,7 @@
             React JS
           </button>
           <button id="all" class="nav-btn selected" onclick="addProject('all')">
-            All
+            Tudo
           </button>
         </div>
         <div class="cards">
@@ -89,38 +89,49 @@
     <div class="about-container">
       <a name="about"></a>
       <div class="about-title">
-        <h1>About <span class="emphasis">Me</span></h1>
+        <h1>Sobre <span class="emphasis">Mim</span></h1>
       </div>
       <div class="about-cards">
         <div class="ab-card">
-          <div class="ab-card-img"></div>
+          <div class="ab-card-img">
+            <img
+              src="img/about/gilberto.png"
+              alt="Gilberto dos Santos Ribeiro"
+            />
+          </div>
           <div class="ab-card-text">
-            <h4>Title</h4>
+            <h4>O que eu faço?</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              tempore, dignissimos nemo aspernatur veniam nihil maxime minima!
+              Sou um Desenvolvedor Web mais focado no Front-End porém aprendendo
+              Back-end com NodeJS e Python. Atualmente Cursando Ciência da
+              Computação na UNIP
             </p>
           </div>
         </div>
 
         <div class="ab-card">
-          <div class="ab-card-img"></div>
+          <div class="ab-card-img">
+            <img src="img/about/linguagem.png" alt="Linguagens que utilizo" />
+          </div>
           <div class="ab-card-text">
-            <h4>Title</h4>
+            <h4>Linguagens e Habilidades</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              tempore, dignissimos nemo aspernatur veniam nihil maxime minima!
+              As linguagens que utilizo são: HTML5, CSS3, Javascript e Python.
+              Atualmente minha linguagem principal é Javascript.
             </p>
           </div>
         </div>
 
         <div class="ab-card">
-          <div class="ab-card-img"></div>
+          <div class="ab-card-img">
+            <img src="img/about/react.svg" alt="" />
+          </div>
           <div class="ab-card-text">
-            <h4>Title</h4>
+            <h4>Frameworks e Ferramentas</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              tempore, dignissimos nemo aspernatur veniam nihil maxime minima!
+              Os frameworks que domino e/ou estou aprendendo são: Bootstrap,
+              ReactJS e React Native. A ferramenta que utilizo é o Visual Studio
+              Code
             </p>
           </div>
         </div>
@@ -130,18 +141,18 @@
     <div class="form-container">
       <a name="contact"></a>
       <div class="form-head">
-        <h1><span class="emphasis">Call</span> Me</h1>
+        <h1>Entre em <span class="emphasis">Contato</span> Comigo!</h1>
       </div>
       <div class="form-btn">
         <a href="https://github.com/Gilbertosr5" target="_blank" id="github">
-          <i class="fa-brands fa-github"></i> My GitHub</a
+          <i class="fa-brands fa-github"></i> Meu GitHub</a
         >
         <a
           href="src/Gilberto S Ribeiro - Desenvolvedor.pdf"
           target="_blank"
           id="resume"
         >
-          <i class="fa-solid fa-file"></i> My Resume</a
+          <i class="fa-solid fa-file"></i> Meu Currículo</a
         >
       </div>
       <form
@@ -149,19 +160,19 @@
         method="POST"
         action="https://formsubmit.co/gillbertosr5@gmail.com"
       >
-        <input
+        <!-- <input
           type="hidden"
           name="_next"
           value="http://127.0.0.1:5500/contact-sucess.html"
-        />
-        <input type="text" name="name" id="name" placeholder="Your Name" />
-        <input type="email" name="email" id="email" placeholder="Your Email" />
+        /> -->
+        <input type="text" name="name" id="name" placeholder="Seu Nome" />
+        <input type="email" name="email" id="email" placeholder="Seu Email" />
         <textarea
           name="message"
           id="message"
           cols="30"
           rows="10"
-          placeholder="Your Message"
+          placeholder="A mensagem"
         ></textarea>
         <button type="submit">Submit</button>
       </form>
@@ -173,11 +184,11 @@
       <ul class="nav-list">
         <li class="nav-item"><a href="#top" class="nav-link">Home</a></li>
         <li class="nav-item">
-          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#projects" class="nav-link">Projetos</a>
         </li>
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
         <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#contact" class="nav-link">Contato</a>
         </li>
       </ul>
       <div class="bars" id="mobileBars">
