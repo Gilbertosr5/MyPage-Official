@@ -38,6 +38,9 @@ function toggleMenu() {
 function addProject(btn) {
   document.querySelector(".cards").innerHTML = "";
   if (btn == "all") {
+    document.querySelector(".nav-btn.selected").classList.remove("selected");
+    document.querySelector(`#${btn}`).classList.add("selected");
+
     for (let i in projects) {
       document.querySelector(".cards").innerHTML += `<div class="card">
       <div class="card-img">
@@ -54,6 +57,9 @@ function addProject(btn) {
       console.log(`${projects[i].name} added`);
     }
   } else if (btn == "react") {
+    document.querySelector(".nav-btn.selected").classList.remove("selected");
+    document.querySelector(`#${btn}`).classList.add("selected");
+
     for (let i in projects) {
       if (projects[i].category == btn) {
         document.querySelector(".cards").innerHTML += `<div class="card">
@@ -72,6 +78,9 @@ function addProject(btn) {
       }
     }
   } else if (btn == "web") {
+    document.querySelector(".nav-btn.selected").classList.remove("selected");
+    document.querySelector(`#${btn}`).classList.add("selected");
+
     for (let i in projects) {
       if (projects[i].category == btn) {
         document.querySelector(".cards").innerHTML += `<div class="card">
@@ -90,6 +99,9 @@ function addProject(btn) {
       }
     }
   } else if (btn == "ux") {
+    document.querySelector(".nav-btn.selected").classList.remove("selected");
+    document.querySelector(`#${btn}`).classList.add("selected");
+
     for (let i in projects) {
       if (projects[i].category == btn) {
         document.querySelector(".cards").innerHTML += `<div class="card">
@@ -108,6 +120,8 @@ function addProject(btn) {
       }
     }
   }
+  console.log(".");
+  console.log(".");
 }
 
 addProject();
